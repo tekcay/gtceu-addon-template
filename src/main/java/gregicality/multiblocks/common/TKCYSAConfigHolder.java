@@ -1,8 +1,7 @@
 package gregicality.multiblocks.common;
 
-import net.minecraftforge.common.config.Config;
-
 import gregicality.multiblocks.TekCaySimpleAddon;
+import net.minecraftforge.common.config.Config;
 
 @Config(modid = TekCaySimpleAddon.MODID)
 public class TKCYSAConfigHolder {

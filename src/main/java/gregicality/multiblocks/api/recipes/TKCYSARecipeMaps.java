@@ -5,7 +5,7 @@ import gregtech.api.recipes.RecipeMap;
 import gregtech.api.recipes.builders.BlastRecipeBuilder;
 import gregtech.core.sound.GTSoundEvents;
 
-public final class GCYMRecipeMaps {
+public final class TKCYSARecipeMaps {
 
     public static final RecipeMap<BlastRecipeBuilder> ALLOY_BLAST_RECIPES = new RecipeMap<>("alloy_blast_smelter", 9, 0,
             3, 1, new BlastRecipeBuilder(), false)
@@ -17,5 +17,5 @@ public final class GCYMRecipeMaps {
                     .setSlotOverlay(true, true, true, GuiTextures.FURNACE_OVERLAY_2)
                     .setSound(GTSoundEvents.FURNACE);
 
-    private GCYMRecipeMaps() {}
+    private TKCYSARecipeMaps() {}
 }

@@ -1,16 +1,14 @@
 package gregicality.multiblocks.api.utils;
 
+import gregicality.multiblocks.TekCaySimpleAddon;
 import net.minecraft.util.ResourceLocation;
-
 import org.jetbrains.annotations.NotNull;
 
-import gregicality.multiblocks.TekCaySimpleAddon;
+public final class TKCYSAUtil {
 
-public final class GCYMUtil {
-
-    public static @NotNull ResourceLocation gcymId(@NotNull String path) {
+    public static @NotNull ResourceLocation tkcysa(@NotNull String path) {
         return new ResourceLocation(TekCaySimpleAddon.MODID, path);
     }
 
-    private GCYMUtil() {}
+    private TKCYSAUtil() {}
 }

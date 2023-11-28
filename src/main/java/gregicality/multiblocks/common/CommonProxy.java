@@ -1,8 +1,10 @@
 package gregicality.multiblocks.common;
 
-import java.util.Objects;
-import java.util.function.Function;
-
+import gregicality.multiblocks.TekCaySimpleAddon;
+import gregicality.multiblocks.api.utils.TKCYSALog;
+import gregicality.multiblocks.common.block.GCYMMetaBlocks;
+import gregicality.multiblocks.loaders.recipe.TKCYSARecipeLoader;
+import gregtech.api.block.VariantItemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -15,12 +17,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 
-import gregtech.api.block.VariantItemBlock;
-
-import gregicality.multiblocks.TekCaySimpleAddon;
-import gregicality.multiblocks.api.utils.GCYMLog;
-import gregicality.multiblocks.common.block.GCYMMetaBlocks;
-import gregicality.multiblocks.loaders.recipe.GCYMRecipeLoader;
+import java.util.Objects;
+import java.util.function.Function;
 
 @Mod.EventBusSubscriber(modid = TekCaySimpleAddon.MODID)
 public class CommonProxy {
@@ -36,7 +34,7 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        GCYMLog.logger.info("Registering blocks...");
+        TKCYSALog.logger.info("Registering blocks...");
         IForgeRegistry<Block> registry = event.getRegistry();
 
         registry.register(GCYMMetaBlocks.UNIQUE_CASING);
@@ -45,7 +43,7 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        GCYMLog.logger.info("Registering Items...");
+        TKCYSALog.logger.info("Registering Items...");
         IForgeRegistry<Item> registry = event.getRegistry();
 
         registry.register(createItemBlock(GCYMMetaBlocks.UNIQUE_CASING, VariantItemBlock::new));
@@ -60,11 +58,11 @@ public class CommonProxy {
 
     @SubscribeEvent()
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-        GCYMLog.logger.info("Registering recipes...");
+        TKCYSALog.logger.info("Registering recipes...");
 
         // Main recipe registration
         // This is called AFTER GregTech registers recipes, so
         // anything here is safe to call removals in
-        GCYMRecipeLoader.init();
+        TKCYSARecipeLoader.init();
     }
 }

@@ -1,8 +1,8 @@
 package gregicality.multiblocks.common;
 
 import gregicality.multiblocks.TekCaySimpleAddon;
-import gregicality.multiblocks.api.unification.TKCYSAMaterials;
 import gregicality.multiblocks.api.unification.TKCYSAMaterialFlagAddition;
+import gregicality.multiblocks.api.unification.TKCYSAMaterials;
 import gregtech.api.unification.material.event.MaterialEvent;
 import gregtech.api.unification.material.event.PostMaterialEvent;
 import net.minecraftforge.fml.common.Mod;

@@ -2,9 +2,9 @@ package gregicality.multiblocks.loaders.recipe;
 
 import gregicality.multiblocks.loaders.recipe.handlers.GCYMMaterialRecipeHandler;
 
-public final class GCYMRecipeLoader {
+public final class TKCYSARecipeLoader {
 
-    private GCYMRecipeLoader() {}
+    private TKCYSARecipeLoader() {}
 
     public static void init() {
         GCYMMetaTileEntityLoader.init();

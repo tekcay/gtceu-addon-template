@@ -3,11 +3,11 @@ package gregicality.multiblocks.api.utils;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
-public final class GCYMLog {
+public final class TKCYSALog {
 
     public static Logger logger;
 
-    private GCYMLog() {}
+    private TKCYSALog() {}
 
     public static void init(@NotNull Logger modLogger) {
         logger = modLogger;
