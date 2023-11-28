@@ -7,9 +7,7 @@ public final class TKCYSAMaterialFlagAddition {
 
     private TKCYSAMaterialFlagAddition() {}
 
-    public static void init() {
-    }
+    public static void init() {}
 
-    public static void initLate() {
-    }
+    public static void initLate() {}
 }

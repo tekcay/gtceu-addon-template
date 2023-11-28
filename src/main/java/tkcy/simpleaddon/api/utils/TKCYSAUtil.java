@@ -1,8 +1,10 @@
 package tkcy.simpleaddon.api.utils;
 
-import tkcy.simpleaddon.TekCaySimpleAddon;
 import net.minecraft.util.ResourceLocation;
+
 import org.jetbrains.annotations.NotNull;
+
+import tkcy.simpleaddon.TekCaySimpleAddon;
 
 public final class TKCYSAUtil {
 

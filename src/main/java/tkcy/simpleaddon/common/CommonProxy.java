@@ -1,5 +1,8 @@
 package tkcy.simpleaddon.common;
 
+import java.util.Objects;
+import java.util.function.Function;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -11,12 +14,10 @@ import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
+
 import tkcy.simpleaddon.TekCaySimpleAddon;
 import tkcy.simpleaddon.api.utils.TKCYSALog;
 import tkcy.simpleaddon.loaders.recipe.TKCYSARecipeLoader;
-
-import java.util.Objects;
-import java.util.function.Function;
 
 @Mod.EventBusSubscriber(modid = TekCaySimpleAddon.MODID)
 public class CommonProxy {

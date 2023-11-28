@@ -1,6 +1,5 @@
 package tkcy.simpleaddon.common.block;
 
-import gregtech.common.blocks.MetaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.IBlockState;
@@ -9,18 +8,19 @@ import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
 import org.jetbrains.annotations.NotNull;
+
+import gregtech.common.blocks.MetaBlocks;
 
 public final class TKCYSAMetaBlocks {
 
     private TKCYSAMetaBlocks() {}
 
-    public static void init() {
-    }
+    public static void init() {}
 
     @SideOnly(Side.CLIENT)
-    public static void registerItemModels() {
-    }
+    public static void registerItemModels() {}
 
     @SideOnly(Side.CLIENT)
     private static void registerItemModel(@NotNull Block block) {

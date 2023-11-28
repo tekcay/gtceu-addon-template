@@ -4,6 +4,5 @@ public final class TKCYSAFirstDegreeMaterials {
 
     private TKCYSAFirstDegreeMaterials() {}
 
-    public static void init() {
-    }
+    public static void init() {}
 }

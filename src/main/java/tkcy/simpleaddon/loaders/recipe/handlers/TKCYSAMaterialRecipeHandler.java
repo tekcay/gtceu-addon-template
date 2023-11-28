@@ -6,9 +6,9 @@ public final class TKCYSAMaterialRecipeHandler {
 
     public static void register() {
         /*
-        OrePrefix.ingot.addProcessingHandler(GCYMPropertyKey.ALLOY_BLAST,
-                TKCYSAMaterialRecipeHandler::generateAlloyBlastRecipes);
-
+         * OrePrefix.ingot.addProcessingHandler(GCYMPropertyKey.ALLOY_BLAST,
+         * TKCYSAMaterialRecipeHandler::generateAlloyBlastRecipes);
+         * 
          */
     }
 }

@@ -1,7 +1,8 @@
 package tkcy.simpleaddon.common;
 
-import tkcy.simpleaddon.TekCaySimpleAddon;
 import net.minecraftforge.common.config.Config;
+
+import tkcy.simpleaddon.TekCaySimpleAddon;
 
 @Config(modid = TekCaySimpleAddon.MODID)
 public class TKCYSAConfigHolder {

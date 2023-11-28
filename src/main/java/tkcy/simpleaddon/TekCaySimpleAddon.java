@@ -1,10 +1,11 @@
 package tkcy.simpleaddon;
 
-import gregtech.GTInternalTags;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
 import org.jetbrains.annotations.NotNull;
+
 import tkcy.simpleaddon.api.TKCYSAInternalTags;
 import tkcy.simpleaddon.api.utils.TKCYSALog;
 import tkcy.simpleaddon.common.CommonProxy;
