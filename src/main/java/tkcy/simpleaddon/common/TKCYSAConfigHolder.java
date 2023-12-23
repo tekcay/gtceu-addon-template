@@ -7,14 +7,16 @@ import tkcy.simpleaddon.TekCaySimpleAddon;
 @Config(modid = TekCaySimpleAddon.MODID)
 public class TKCYSAConfigHolder {
 
-    @Config.Comment("Config options applying to all GCYM Multiblocks")
-    @Config.Name("Global Multiblock Options")
+    @Config.Comment("Config tooltip")
+    @Config.Name("Config label")
     public static GlobalMultiblocks globalMultiblocks = new GlobalMultiblocks();
 
     public static class GlobalMultiblocks {
 
-        @Config.Comment({ "Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.",
-                "Default: false" })
+        @Config.Comment({ "Config tooltip" })
+        /**
+         * Config label; {@code false} is the default value;
+         */
         public boolean enableTieredCasings = false;
     }
 }
