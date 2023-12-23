@@ -15,8 +15,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 
+import gregtech.api.block.VariantItemBlock;
+
 import tkcy.simpleaddon.TekCaySimpleAddon;
 import tkcy.simpleaddon.api.utils.TKCYSALog;
+import tkcy.simpleaddon.common.block.TKCYSAMetaBlocks;
 import tkcy.simpleaddon.loaders.recipe.TKCYSARecipeLoader;
 
 @Mod.EventBusSubscriber(modid = TekCaySimpleAddon.MODID)
@@ -35,12 +38,16 @@ public class CommonProxy {
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         TKCYSALog.logger.info("Registering blocks...");
         IForgeRegistry<Block> registry = event.getRegistry();
+
+        registry.register(TKCYSAMetaBlocks.EXAMPLE);
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         TKCYSALog.logger.info("Registering Items...");
         IForgeRegistry<Item> registry = event.getRegistry();
+
+        registry.register(createItemBlock(TKCYSAMetaBlocks.EXAMPLE, VariantItemBlock::new));
     }
 
     private static <T extends Block> ItemBlock createItemBlock(T block, Function<T, ItemBlock> producer) {

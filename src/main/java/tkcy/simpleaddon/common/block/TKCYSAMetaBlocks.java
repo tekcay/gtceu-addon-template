@@ -13,14 +13,23 @@ import org.jetbrains.annotations.NotNull;
 
 import gregtech.common.blocks.MetaBlocks;
 
+import tkcy.simpleaddon.common.block.blocks.MetaBlockExample;
+
 public final class TKCYSAMetaBlocks {
 
     private TKCYSAMetaBlocks() {}
 
-    public static void init() {}
+    public static MetaBlockExample EXAMPLE;
+
+    public static void init() {
+        EXAMPLE = new MetaBlockExample();
+        EXAMPLE.setRegistryName("meta_block_example");
+    }
 
     @SideOnly(Side.CLIENT)
-    public static void registerItemModels() {}
+    public static void registerItemModels() {
+        registerItemModel(EXAMPLE);
+    }
 
     @SideOnly(Side.CLIENT)
     private static void registerItemModel(@NotNull Block block) {
