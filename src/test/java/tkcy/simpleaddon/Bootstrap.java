@@ -21,10 +21,8 @@ import net.minecraftforge.fml.relauncher.Side;
 
 import gregtech.api.GTValues;
 import gregtech.api.GregTechAPI;
-import gregtech.api.fluids.GTFluidRegistration;
 import gregtech.api.unification.material.Materials;
 import gregtech.api.unification.material.materials.MaterialFlagAddition;
-import gregtech.api.unification.material.registry.MarkerMaterialRegistry;
 import gregtech.api.unification.ore.OrePrefix;
 import gregtech.common.items.MetaItems;
 import gregtech.core.unification.material.internal.MaterialRegistryManager;
@@ -67,7 +65,6 @@ public final class Bootstrap {
 
         MaterialRegistryManager managerInternal = MaterialRegistryManager.getInstance();
         GregTechAPI.materialManager = managerInternal;
-        GregTechAPI.markerMaterialRegistry = MarkerMaterialRegistry.getInstance();
         managerInternal.unfreezeRegistries();
 
         Materials.register();
@@ -86,7 +83,6 @@ public final class Bootstrap {
         managerInternal.freezeRegistries();
 
         OrePrefix.runMaterialHandlers();
-        GTFluidRegistration.INSTANCE.register();
 
         MetaItems.init();
 
